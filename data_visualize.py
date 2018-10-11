@@ -2,7 +2,7 @@ import pylab
 import pandas as pd
 import csv
 
-df = pd.read_csv("E:\\Machine_Learns_Logistic_Reg\\data\\train.csv")
+df = pd.read_csv("E:\\Machine_Learns_Logistic_Reg\\testdata.csv")
 data = df.values.T.tolist()
 
 #print(data)
@@ -13,7 +13,7 @@ data = df.values.T.tolist()
 # else:
 pylab.scatter(data[0], data[1], c=data[2], cmap=pylab.cm.cool)
 
-plt.xlabel('Lot Frontage')
-plt.ylabel('Lot Area')
+pylab.xlabel('Lot Frontage')
+pylab.ylabel('Lot Area')
 
 pylab.show()
